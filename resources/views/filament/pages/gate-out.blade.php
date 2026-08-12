@@ -2,7 +2,7 @@
     <form wire:submit="create">
         {{ $this->form }}
 
-        <div class="mt-10">
+        <div style="margin-top: 2.5rem;">
             <x-filament::button type="submit" color="warning">
                 Gate Out
             </x-filament::button>

@@ -110,4 +110,10 @@ class GateIn extends Page implements HasForms
 
         $this->form->fill();
     }
+    public function gateInAction(): Action
+    {
+        return Action::make('gateIn')
+            ->label('Gate In')
+            ->action(fn() => $this->create());
+    }
 }
